@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--Project Stage 2-->
+<html>
+<head>
+  <title> Bonnie's Notes </title>
+  <link rel="stylesheet" Type="text/css" href="BonnieP2style.css">
+</head>
+  <body>
+    <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">How the Web Works</a></li>
+          <li><a href="#lesson-1-2">Hypertext Markup Language</a></li>
+          <li><a href="#lesson-1-3">Why Programmers are so Smart</a></li>
+          <li><a href="#lesson-1-4">Programmers Vocabulary</a></li>
+          <li><a href="#lesson-1-5">Udacity Image</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Developer Tools Inline and Block</a></li>
+          <li><a href="#lesson-2-2">HTML Structuring and CSS Styling</a></li>
+          <li><a href="#lesson-2-3">Text Editors for Programming</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding Style to HTML Structure with CSS</a>
+        <ul>
+          <li><a href="#lesson-3-1">Adding Style with CSS</a></li>
+          <li><a href="#lesson-3-2">The Box Model and Avoiding Repetition with CSS</a></li>
+          <li><a href="#lesson-3-3">Code-Test-Refine</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-4">Lesson 4: Intro to Serious Programming</a>
+        <ul>
+          <li><a href="#lesson-4-1">Computers and Computer Programs</a></li>
+          <li><a href="#lesson-4-2">Programming Languages</a></li>
+          <li><a href="#lesson-4-3">Python and its Grammar Rules</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-5">Lesson 5: Variables and Strings using Python</a>
+        <ul>
+          <li><a href="#lesson-5-1">Variables</a></li>
+          <li><a href="#lesson-5-2">They're called Variables because they can Vary</a></li>
+          <li><a href="#lesson-5-3">Strings</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-6">Lesson 6: Input -> Function -> Output</a>
+        <ul>
+          <li><a href="#lesson-6-1">What is a Function?</a></li>
+          <li><a href="#lesson-6-2">Making versus Using a Function</a></li>
+          <li><a href="#lesson-6-3">How do Functions help Programmers Avoid Repetition?</a></li>
+          <li><a href="#lesson-6-4">What happens when a Function does not have a<span class="code">Return</span>statement?</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-7">Lesson 7: Control Flow and Loops: <b>if</b> and <b>while</b></a>
+        <ul>
+          <li><a href="#lesson-7-1">What is an <b>if</b> Statement?</a></li>
+          <li><a href="#lesson-7-2">While Loops</a></li>
+          <li><a href="#lesson-7-3">Debugging</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-8">Lesson 8: Control Flow and Loops: <b>if</b> and <b>while</b></a>
+        <ul>
+          <li><a href="#lesson-8-1">What is a <span class="bold">LIST</span>?</a></li>
+          <li><a href="#lesson-8-2">Loops on Lists: <span class="bold">for</span>/a></li>
+          <li><a href="#lesson-8-3">Problem Solving</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+    <h1>Important Concepts</h1>
+    <div class="lesson">
+      <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+      <div class="concept" id="lesson-1-1">
+      <div class="concept-title">
+          How the Web Works
+        </div>
+        <div class="concept-description">
+          <p>
+            A user opens a browser on their computer such as Firefox and requests information
+            from a URL such as <a href="http://WWW.Udacity.com">Udacity.com.</a>  The set of rules used to traverse the world wide web is called <span class="bold">HTTP</span> or <span class="italic">Hyper Transfer Protocol</span> and the information sought might be a webpage containing text, videos, images etc. The webpage displayed is written in a language the computer understands called <span class="bold">HTML</span> or <span class="italic">Hypertext Markup Language</span>
+            <span class="bold">HTTP</span> finds the <span class="bold">HTML</span> document on the correct server (another type of computer that 
+            stores information) and sends it back where the browser 
+            interprets and displays 
+            the information on the user's screen.
+          </p>
+        </div>
+      </div>
+        <div class="concept" id="lesson-1-2">
+        <div class="concept-title">
+          Hypertext Markup language
+        </div>
+        <div class="concept-description">
+          <p>
+            Hypertext Markup Language or <span class="italic">HTML</span> for short
+            is <span class="bold">code</span> programmers write in so that 
+            the computer understands.  The sentence: "I'm <span class="bold">learning</span> to code!"--for example--requires a special "code" to tell the computer to make the letters in the word "learning" appear in <span class="bold">bold</span> type.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-3">
+        <div class="concept-title">
+          Why Programmers are so Smart
+        </div>
+        <div class="concept-description">
+          <p>
+            Programmers have to be smart because computers are stupid!  Programmers must write code in the correct syntax because computers translate the code literally; this can be frustrating but with extreme focus--powerful. Programmers are smarter than computers but they cannot remember all the rules!  If you forget a rule--just look it up!  
+          </p>
+        </div>
+      </div>
+     <div class="concept" id="lesson-1-4">
+        <div class="concept-title">
+          Programmer's Vocabulary
+        </div>
+        <div class="concept-description">
+          <p>
+            In programming language there are <span class="bold">tag, element</span>  and <span class="bold">attribute</span>definitions and rules.  In HTML, the <span class="bold">text</span> is <span class="italic">what you see</span> and the <span class="bold">markup</span> is <span class="italic">what it looks like.</span> A tag was used in the previous sentence to make the letters in the word "text" and "markup" appear <span class="bold">bold</span>; it requires an opening tag and a closing tag to create the appearance.  The word "text" is called the <span class="bold">content</span>  and the entire length of this information end to end is called an <span class="bold">element.</span> 
+          </p>
+          <p>
+            As mentioned there are <span class="bold">attributes</span> within elements.  You can look them up on the internet but let me share another example here because <span class="bold">coding is fun!</span> Some tags require an "attribute" like the "img" tag requires an opening tag, an attribute: "src", a link to the image, an "alt" attribute containing text to desribe the image; this is for two reasons 1) in case the link is broken and 2) for the blind.  What no closing tag?  "img" is a <span class="bold">void</span>  tag; and therefore, does not require a closing tag.
+          </p>
+        </div>
+      </div>
+      <div class="container" id="lesson-1-5" style="display: flex;">
+        <div>
+         <img src="http://www.udacity.com/cs253x/hipmunk.png" alt="hipmunk!">
+       </div>
+        <article>
+          <h3>Udacity Image:</h3>
+            <p>This image was borrowed from Udacity Intro to Programming lesson one to illustrate an image displayed using the <span class="bold">img</span> tag.
+            </p>
+         </article>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+      <div class="concept" id="lesson-2-1">
+        <div class="concept-title">
+          Developer Tools Inline and Block
+        </div>
+        <div class="concept-description">
+          <p>
+            HTML elements are "inline" or "block."  The difference between <span class="bold">inline</span> and <span class="bold">block</span> is that block elements like "p" for paragraph form an <span>invisible box</span> around the content inside of them. 
+          </p>
+        </div> 
+      </div> 
+      <div class="concept" id="lesson-2-2">
+        <div class="concept-title">
+          HTML Structuring and CSS Styling
+        </div>
+        <div class="concept-description">
+          <p>
+            HTML and <span class="bold">CSS</span> Cascading Style Sheets are two of the many languages used to create web pages.  HTML develops the classification or structure and CSS provides the style or look and feel of a web page.  When programmers talk about <span class="bold">DOM</span> Document Object Model, they are talking about the <span class="italic">tree-like</span> structure of a web page. Beginner web page developers should start with big boxes, move to small boxes and literally sketch out their web design with a pen or pencil. Programmers define boxes or containers around their content with <span class="bold">div</span> tags. The <span class="bold">div</span> tag is one of the most important tags used to organize HTML into big and small boxes needed to organize and structure HTML. They use "span" and other tags to help with the styling of their content.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-3">
+        <div class="concept-title">
+          Text Editors for Programming
+        </div>
+        <div class="concept-description">
+          <p>
+            Text editors like <span class="bold">Scratchpad, Codepen</span>  and <span class="bold">Sublime</span> make writing code easier.  For example, Scratchpad is good for beginners because what's been coded is immediately displayed in a split screen view. Sublime anticipates the tag you need with a pop-up selection box triggered by one or two key-strokes. 
+          </p>
+        </div>  
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-3">Lesson 3: Adding Style to HTML Structure with CSS</h2> 
+      <div class="concept" id="lesson-3-1">
+        <div class="concept-title">
+          Adding Style with CSS
+        </div>  
+        <div class="concept-description">   
+          <p>
+            Programmers use CSS to add style to their HTML structure by
+            using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference.</a> Programmers learn possible values and properties of attributes they need to convert their mockup to code. <span class="bold">Cascading</span> means that rules are applied not only to the elements they directly match, but also to all of those elements' children. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-2">
+        <div class="concept-title">
+          The Box Model and Avoiding Repetition with CSS
+        </div>
+        <div class="concept-description">  
+          <p>
+            Programmers define boxes around their content with "div" tags but its important to remember to use standards. Using standards while positioning boxes will apply the proper semantics, allow all browsers to read your code and any programmer to edit your code.  In addition, avoiding repetition in your code styling will facilitate changes and avoid errors. Standard and consistent use of the <span class="bold">class</span> attribute and CSS Reference will make good practice needed to refine your ability.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-3">
+        <div class="concept-title">
+          Code-Test-Refine
+        </div>
+        <div class="concept-description">  
+          <p>
+            Perfect practice calls for <span class="italic">code, test, and refine</span> behavior: look for natural boxes in your design; look for repeated styles and semantic elements; write your HTML; apply styles from Biggest to smallest (Thanks Jacques!); and finally continue to fix your code. These five behaviors will make for perfect practice on your road to fluency!
+          </p>
+        </div>
+       </div>
+      </div>
+    <h1>Important Concepts - Telling Computers What to Do</h1> 
+    <div class="lesson">
+      <h2 id="lesson-4">Lesson 4: Introduction to Serious Programming</h2> 
+      <div class="concept" id="lesson-4-1">
+      <div class="concept-title">
+        Computers and Computer Programs 
+        </div>  
+        <div class="concept-description">   
+          <p>
+            The <span class="bold">computer</span> by itself does not know what to do; it has limited functionality.  Computer <span class="bold">programs</span>  are what tell the computer what to do.  Anything we can imagine a computer can do, with the right programming, we can make the computer into a web browser, server, game-playing machine, computation machine and even the driver of a car.  
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-4-2">
+        <div class="concept-title">
+          Programming Languages
+        </div>
+        <div class="concept-description">  
+          <p>
+            Programming languages tell the computer what steps to take.  It is important to understand why new languages are invented for computers in place of English or French, German, etc.  The language of humans is too ambiguous and verbose for a computer to understand.  Like the definition of biweekly; is it every two weeks or twice per week?  A computer needs specific <span class="italic">syntax</span>, clear and concise instructions in order to perform the programmers intended task.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-4-3">
+        <div class="concept-title">
+          Python and its Grammar Rules
+        </div>
+        <div class="concept-description">  
+          <p>
+            The computer language, <span class="bold">Python</span> , which was named from the Monty Python series, uses Backus-Naur form invented to describe languages simply and concisely.  Like English, Python has <span class="bold">grammar rules</span> similar to sentence structure that can be compared as non-terminals to derive terminals.  For example, the English non-terminal <span class="bold">Sentence: Noun, Verb, Object</span> becomes the terminal: 'I like Python.' Python grammar turns the non-terminal <span class="bold">Expression: Expression, Operator, Expression</span> into the terminal: ((3 * 3) + (2**3)). 
+          </p>
+        </div>
+      </div> 
+    </div> 
+    <div class="lesson">
+      <h2 id="lesson-5">Lesson 5: Variables and Strings using Python</h2> 
+      <div class="concept" id="lesson-5-1">
+      <div class="concept-title">
+        Variables 
+        </div>  
+        <div class="concept-description">   
+          <p>
+            Python allows the programmer to use names aka <span class="bold">variables</span> to keep track of numbers via the <span class="bold">Assignment Statement</span>.  Programmers assigning a number or value to a variable is powerful because it makes writing and reading code easier. For example, the speed of light in meters per second is 299792458.  Using an <span class="italic">assignment statement</span> in Python: Name = Expression or speed_of_light = 299792458 will display the actual value of the speed of light when "print speed_of_light is run. The programmer no longer has to remember the value of the speed of light in meters per second.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-5-2">
+        <div class="concept-title">
+          They're called Variables because they can Vary
+        </div>
+        <div class="concept-description">  
+          <p>
+            In math, 2+3 <span class="bold">always</span> equals 5. In Python the <span class="bold">=</span> sign means <span class="italic">assignment</span> which means that Python is assigning the expression "5" to a name "variable."  For example, in <span class="bold">my_variable = 5. </span>Python is assigning the "value" 5 to "my_variable." And, because it is a variable, the assignment can be changed. The programmer can make the expression have a different value in the code each time it's evaluated. 
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-5-3">
+        <div class="concept-title">
+          Strings
+        </div>
+        <div class="concept-description">  
+          <p>
+            <span class="bold">Strings</span> are a sequence of characters surrounded by quotes: <span class="bold">"I'm a string!"</span> Single or double quotes allowed as long as you open and close with the same type of mark. <span class="bold">'I am a string too!'</span> Strings allow programmers to build search engines and work with any characters they can type on a keyboard.  In Python, the difference between 2+2 and "2" + "2" is the quotes make it a string and the <span class="bold">+</span> sign is an operator that concatonates the two strings.  So, instead of 2+2=4 we have "2"+"2" which is <span class="italic">assigned</span> "22" within the program.
+          </p>
+        </div>
+      </div> 
+    </div> 
+    <div class="lesson">
+      <h2 id="lesson-6">Lesson 6: Input -> Function -> Output</h2> 
+      <div class="concept" id="lesson-6-1">
+      <div class="concept-title">
+        What is a Function? 
+        </div>  
+        <div class="concept-description">   
+          <p>
+            A <span class="bold">function</span> is something that takes input, does something to that input, and then produces output. For example, a function named<span class="code">sum4</span> might take a set of four numbers as input and produce the sum of those four numbers as output.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-6-2">
+        <div class="concept-title">
+          Making versus Using a Function
+        </div>
+        <div class="concept-description">  
+          <p>
+            Functions are <span class="bold">made</span> by starting a line of code with the keyword<span class="code">def</span> which means define and then giving the function a name followed by the function <span class="code">parameter(s)</span> in parentheses followed by a colon. These parameters will eventually be replaced by actual value(s) when the fucntion is used <span class="bold">(called)</span>. 
+          </p>
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:>  
+          <div>
+          <p>
+            In the <span class="italic">body</span> of the function, programmers write the code that specifies what to do with the input parameter(s).  For example, the code to the right could be the definition of a function named <span class="code">sum4</span>. The <span class="code">return</span> statement triggers the function to produce the programs desired output. 
+          </p>
+          </div>
+          <div class="concept-description" style="width: 100%; height: 100%;">  
+              <div class="code-block">def sum4(a,b,c,d): <br>
+              <span class="indent">return a + b + c + d </span><br>
+              <span class="indent">print sum4(2,4,7,9) <br>
+              RUN <br>
+              22 </span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="concept" id="lesson-6-3">
+        <div class="concept-title">
+          How do Functions help Programmers Avoid Repetition?
+        </div>
+        <div class="concept-description">  
+          <p>
+            Functions are tools that programmers can create and reuse forever! Once a programmer has defined a function once, they never have to define it again. An example of avoiding repetition is to use output(s) of one function as input(s) to another; this is called <span class="italic">Composition of Functions.</span> 
+          </p>
+        </div>
+      </div> 
+      <div class="concept" id="lesson-6-4">
+        <div class="concept-title">
+          What happens when a Function does not have a<span class="code">Return</span>statement?
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:> 
+          <div>
+          <p>
+            The <span class="code">return</span> statement tells Python exactly what the function should produce as output. If a function does not have a <span class="code">return</span> statement, then you will get a special output: <b>None</b>. See example to the right where a variable has been added to the function but to no avail:
+          </p>
+          </div>
+          <div class="concept-description" style="width: 100%; height: 100%;">
+            <div class="code-block">def add_two(x): <br>
+            <span class="indent">answer = x + 2 </span><br>
+            <span class="indent">new_number = add_two(7)</span><br>
+            <span class="indent">print new_number <br>
+            RUN <br>
+            None </span>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-7">Lesson 7: Control Flow and Loops: <b>if</b> and <b>while</b></h2> 
+      <div class="concept" id="lesson-7-1">
+        <div class="concept-title">
+          What is an <b>if</b> Statement? 
+        </div>  
+        <div class="concept-description" style="display: flex;style=" width:height:>   
+          <div>
+          <p>
+            We can use the <span class="bold">if</span> statement on a <span class="italic">test expression</span> and make a decision based on comparisons. Python has a way to compare numbers and give back a TRUE or FALSE which is known as a <span class="bold">Boolean</span> value. With the <span class="bold">if</span> statement the test expression executes 0 or 1 times depending on if the test executes to TRUE or FALSE. We can also use <span class="bold">if</span> statements with an <span class="bold">else</span> clause that will execute when the clause behind <span class="bold">if</span> is FALSE.  Like this:
+          </p>
+          </div>
+        <div class="concept-description" style="width: 100%; height: 100%;">  
+          <div class="code-block">if 10>20: <br>
+          <span class="indent">print '10 is greater!'</span>
+          else: <br>
+          <span class="indent">print '20 is greater!' <br>
+          RUN <br>
+          20 is greater!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="concept" id="lesson-7-2">
+        <div class="concept-title">
+          While Loops
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:>   
+          <div>
+          <p>
+            <span class="bold">While</span> is similar to <b>if</b> except the <b>while</b> statement will loop and execute 0 to an infinite number of times as long as the test expression is TRUE.  Once the test is FALSE, then it will jump to the next instruction; it could continue indefinitely which is referred to an <span class="italic">infinite loop</span>. An example of what happens using <span class="bold">countdown(3)</span> instead of <span class="bold">print countdown(3)</span>.
+          </p>
+        </div>
+        <div class="concept-description" style="width: 100%; height: 100%;">  
+            <div class="code-block">def countdown(n): <br>
+            <span class="indent">While n > 0:</span> <br>
+            <span class="indent">print n </span> <br>
+            <span class="indent">n = n - 1 </span> <br>
+            <span class="indent">print 'Blastoff!' <br>
+            RUN <br>
+            3<br>
+            2<br>
+            1<br>
+            Blastoff!</span>
+          </div>
+        </div>
+        </div>
+      </div>
+          <div class="concept" id="lesson-7-3">
+            <div class="concept-title">
+              Debugging
+          </div>
+        <div class="concept-description" style="display: flex;style=" width:height:>   
+          <p>
+            <span class="bold">Debugging</span> is a necessary skill to master if you want to become a good programmer. There are five easy steps:  
+            1) <span class="bold">Examine error messages when programs crash: </span>  The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+            2) <span class="bold">Work from example code: </span> If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+            3) <span class="bold">Make sure examples work: </span>  Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
+            4) <span class="bold">Check (print) intermediate results: </span> When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+            5) <span class="bold">Keep and compare old versions: </span>  When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="lesson">
+      <h2 id="lesson-8">Lesson 8: Structured Data: Lists and FOR Loops</h2>
+      <div class="concept" id="lesson-8-1">
+        <div class="concept-title">
+          What is a <span class="bold">LIST</span>?
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:> 
+          <p>
+            A string is structured data because we can operate on subsequences of strings but strings are limited to characters. A <span class="bold">list</span> is much more powerful than a string because the list is a sequence of not just characters but also numbers, strings, and other lists. With lists we use square brackets instead of quotes and separate the elements with commas. Lists support <span class="italic">mutations</span> which allow the programmer to alter the content of the original list without creating a new list. <span class="italic">Aliasing</span> lists is two ways to refer to the same object. Aliasing variable names for example, p and q, works like this: 
+          </p>
+          <div class="concept-description" style="width: 100%; height: 100%;">
+            <div class="code-block">p = [1,2,3]<br>
+            <span class="indent">q = p </span><br>
+            <span class="indent">p[2] = q[2] + 1 <br>
+            4 is now the value assigned to q[2] </span>
+          </div> 
+        </div>
+      </div> 
+    </div>
+      <div class="concept" id="lesson-8-2">
+        <div class="concept-title">
+          Loops on Lists: <span class="bold">for</span>
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:> 
+          <div>
+          <p>
+            We could loop through elements of a list using <b>while</b> but Python provides a simpler way via <span class="bold">for</span>  loops. For each element in the list assign an element to the name and evaluate the block.  The structure of the <span class="bold">for</span> loop is to the right with an example. For each element in <span class"italic">my_list</span> we assign the element to the <b>name: e</b>:
+          </p>
+          </div>
+          <div class="concept-description" style="width: 100%; height: 100%;">
+            <div class="code-block">def print_all_element(p): <br>
+            <span class="indent">for e in p:</span><br>
+            <span class="indent">print e <br>
+            my_list=[1,2,[3,4]] <br>
+            print_all_elements (my_list) <br>
+            RUN <br>
+            [1,2,[3,4]] </span>
+          </div> 
+        </div>
+      </div>
+    </div>
+        <div class="concept" id="lesson-8-3">
+        <div class="concept-title">
+          Problem Solving
+        </div>
+        <div class="concept-description" style="display: flex;style=" width:height:>   
+          <p>
+            <span class="bold">Problem solving</span> is always better when you do NOT panic!  Staying calm allows one to approach the problem systematically by writing small bits of code, testing them and knowing what they do.  Following these steps will ensure success: 1) Understand the inputs: what is the set of valid inputs and are there any assumptions? A smart programmer will write code defensively and check for validity of inputs.  How are they represented? 2) Understand the outputs: How should we specify the outputs? They should be based upon the original problem statement.  3) Solve the problem statement by understanding the relationships by working some examples.   Consider systematically how a human would solve the problem.  4) Create a simple mechanical solution. Humans are lazy, but computers are not.  Consider the power the computer has and transform your manual examples into simple code.   But don’t try to optimize prematurely.  Simplify and correct.  5) Develop incrementally and test as you go.
+          </p>
+        </div>
+      </div> 
+    </div> 
+  </body>
+</html>
