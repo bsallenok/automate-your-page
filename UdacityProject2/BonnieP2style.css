@@ -1,0 +1,99 @@
+*   {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: #294860;
+}
+
+body {
+    font-family: Arial;
+}
+ul {
+    list-style-type: none;  
+}
+
+li {
+    font-size: 20px;
+    line-height: 44px; 
+    text-align: center;
+}
+
+.lesson {
+    background-color: #33BEBE;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+.concept {
+    background-color: #DFEAF1;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+    color: black;
+}
+
+.concept-title {
+    font-size: 20px;
+    margin: 8px;
+    text-align: center;
+    color: #294860;
+}
+
+
+.concept-description {
+    font-weight: lighter;
+    margin: 6px;
+}
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    background-color: #DFEAF1;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+    color: black;
+}
+article {
+    background-color: #DFEAF1;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+    color: black;
+}
+
+span.code {
+    font-family: Courier;
+    background-color: #BBBBBB;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+div.code-block {
+    font-family: Courier;
+    background-color: #DDDDDD;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+span.indent {
+    margin-left: 38px;
+}
+
